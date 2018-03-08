@@ -5,7 +5,7 @@
     require('./def.php');
     require('./sec_def.php');
     $prefecture=$_POST['prefecture'];
-    $name=$_POST['name'];
+    $name=esc($_POST['name']);
     $tokyo=$_POST['tokyo'];
     $sinjuku=$_POST['sinjuku'];
     $sibuya=$_POST['sibuya'];
