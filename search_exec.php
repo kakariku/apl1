@@ -5,7 +5,7 @@
     require('./def.php');
     require('./sec_def.php');
     $station=$_POST['station'];
-    $minutes=$_POST['minutes'];
+    $minutes=esc($_POST['minutes']);
     $prefecture=$_POST['prefecture'];
 
     $sql_search_su="SELECT pre_id,line_id,sta_id FROM $tb_name_info INNER JOIN $tb_name_min ON $tb_name_info.name = $tb_name_min.name where prefecture='$prefecture' and $station<=$minutes and $station<>0";
