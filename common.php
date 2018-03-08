@@ -64,7 +64,6 @@ a:hover {
 </style>
 </head>
 <html>
-
 <!-- 共通ヘッダー -->
 <body>
   <header>
@@ -85,3 +84,11 @@ a:hover {
     </header>
 </body>
 </html>
+
+<!-- 共通関数 -->
+<?php 
+  function esc($str) {
+  return htmlspecialchars($str, ENT_QUOTES, "UTF-8");
+ }
+?>
+
